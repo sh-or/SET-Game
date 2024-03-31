@@ -1,0 +1,80 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameContainer {
+    display: flex;
+}
+
+#cardContainer {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: inline-block;
+    width: 30%; /* Create the table, 3 cards in a row */
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.red { color: red; }
+.green { color: green; }
+.purple { color: purple; }
+
+.oval { font-size: 40px; }
+.squiggle { font-size: 25px; }
+.diamond { font-size: 20px; }
+
+.solid { text-decoration: none; }
+.striped { text-decoration: underline; }
+.open { text-decoration: line-through; }
+
+.hint {
+    border: 4px solid gold; 
+}
+
+.selected {
+    border: 4px solid greenyellow; 
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+button{
+    margin: 10px;
+    background-color: greenyellow;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#score {
+    text-align: center;
+    align-self: center;
+}
